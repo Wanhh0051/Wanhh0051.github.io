@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>林晚 - 个人作品集 | 数字创意设计师</title>
+    <meta name="description" content="林晚的个人作品集 - 专注于网页设计、UI/UX、品牌视觉创意">
+    <meta name="keywords" content="林晚,设计师,作品集,UI设计,网页设计,创意设计">
+
+    <!-- 引入CSS -->
+    <link rel="stylesheet" href="linwan-portfolio.css">
+
+    <!-- 字体 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- 图标字体 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- 加载动画 -->
+    <div class="loader" id="loader">
+        <div class="loader-circle"></div>
+    </div>
+
+    <!-- 鼠标跟随光晕 -->
+    <div class="cursor-glow" id="cursor-glow"></div>
+
+    <!-- 粒子背景 -->
+    <div class="particles" id="particles"></div>
+
+    <!-- 玻璃态导航栏 -->
+    <header class="glass-header">
+        <nav class="nav-container">
+            <div class="logo">林晚</div>
+            <ul class="nav-links">
+                <li><a href="#home">首页</a></li>
+                <li><a href="#projects">作品</a></li>
+                <li><a href="#skills">技能</a></li>
+                <li><a href="#about">关于</a></li>
+                <li><a href="#contact">联系</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 主要内容 -->
+    <main>
+        <!-- 英雄区域 -->
+        <section class="hero-section" id="home">
+            <h1 class="hero-title">
+                <span>林</span><span>晚</span>
+            </h1>
+            <p class="hero-subtitle typewriter">数字创意设计师 · 品牌视觉专家</p>
+            <button class="cta-button">探索我的作品</button>
+        </section>
+
+        <!-- 项目展示 -->
+        <section class="projects-section" id="projects">
+            <h2 class="section-title">精选作品</h2>
+            <div class="projects-grid">
+                <!-- 项目卡片1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x300/6b46c1/ffffff?text=项目1" alt="品牌视觉设计" style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">
+                    </div>
+                    <h3 class="project-title">暮色品牌视觉系统</h3>
+                    <p class="project-description">为新兴科技公司打造的完整品牌视觉识别系统，融合现代美学与科技感。</p>
+                    <div class="project-tags">
+                        <span class="tag">品牌设计</span>
+                        <span class="tag">UI/UX</span>
+                        <span class="tag">视觉系统</span>
+                    </div>
+                </div>
+
+                <!-- 项目卡片2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x300/2d4a2b/ffffff?text=项目2" alt="网页设计" style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">
+                    </div>
+                    <h3 class="project-title">森林生态网站</h3>
+                    <p class="project-description">响应式环保主题网站设计，采用最新的玻璃态和新拟态设计趋势。</p>
+                    <div class="project-tags">
+                        <span class="tag">网页设计</span>
+                        <span class="tag">响应式</span>
+                        <span class="tag">交互动画</span>
+                    </div>
+                </div>
+
+                <!-- 项目卡片3 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x300/fbbf24/1a1f3a?text=项目3" alt="移动应用" style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">
+                    </div>
+                    <h3 class="project-title">创意思维APP</h3>
+                    <p class="project-description">提升创意思维能力的移动应用，简洁直观的用户界面设计。</p>
+                    <div class="project-tags">
+                        <span class="tag">移动应用</span>
+                        <span class="tag">用户体验</span>
+                        <span class="tag">界面设计</span>
+                    </div>
+                </div>
+
+                <!-- 项目卡片4 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x300/6b46c1/ffffff?text=项目4" alt="插画设计" style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">
+                    </div>
+                    <h3 class="project-title">梦幻插画系列</h3>
+                    <p class="project-description">结合传统美学与现代设计元素的数字插画作品系列。</p>
+                    <div class="project-tags">
+                        <span class="tag">插画设计</span>
+                        <span class="tag">数字艺术</span>
+                        <span class="tag">创意表现</span>
+                    </div>
+                </div>
+
+                <!-- 项目卡片5 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x300/1a1f3a/ffffff?text=项目5" alt="动效设计" style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">
+                    </div>
+                    <h3 class="project-title">交互动效设计</h3>
+                    <p class="project-description">为Web应用打造的流畅交互动效，提升用户体验和视觉吸引力。</p>
+                    <div class="project-tags">
+                        <span class="tag">动效设计</span>
+                        <span class="tag">用户交互</span>
+                        <span class="tag">动画制作</span>
+                    </div>
+                </div>
+
+                <!-- 项目卡片6 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x300/2d4a2b/ffffff?text=项目6" alt="包装设计" style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">
+                    </div>
+                    <h3 class="project-title">生态产品包装</h3>
+                    <p class="project-description">环保理念的产品包装设计，强调可持续性和视觉美感。</p>
+                    <div class="project-tags">
+                        <span class="tag">包装设计</span>
+                        <span class="tag">环保理念</span>
+                        <span class="tag">品牌传达</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 技能展示 -->
+        <section class="skills-section" id="skills">
+            <div class="skills-container">
+                <h2 class="section-title">专业技能</h2>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="skill-icon">🎨</div>
+                        <div class="skill-name">UI/UX设计</div>
+                        <div class="skill-level">精通</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">💻</div>
+                        <div class="skill-name">前端开发</div>
+                        <div class="skill-level">熟练</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">🎯</div>
+                        <div class="skill-name">品牌设计</div>
+                        <div class="skill-level">精通</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">✨</div>
+                        <div class="skill-name">动效设计</div>
+                        <div class="skill-level">熟练</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">📱</div>
+                        <div class="skill-name">移动设计</div>
+                        <div class="skill-level">精通</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">🖼️</div>
+                        <div class="skill-name">插画创作</div>
+                        <div class="skill-level">熟练</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">🎬</div>
+                        <div class="skill-name">视频剪辑</div>
+                        <div class="skill-level">掌握</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">📊</div>
+                        <div class="skill-name">数据分析</div>
+                        <div class="skill-level">掌握</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 联系表单 -->
+        <section class="contact-section" id="contact">
+            <h2 class="section-title">联系合作</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label class="form-label" for="name">您的姓名</label>
+                    <input type="text" id="name" class="form-input" placeholder="请输入您的姓名" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="email">电子邮箱</label>
+                    <input type="email" id="email" class="form-input" placeholder="your@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="project">项目类型</label>
+                    <input type="text" id="project" class="form-input" placeholder="网页设计、品牌VI、移动应用等" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="message">项目描述</label>
+                    <textarea id="message" class="form-textarea" placeholder="请详细描述您的项目需求和想法..." required></textarea>
+                </div>
+                <button type="submit" class="cta-button" style="width: 100%;">发送消息</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="social-links">
+            <a href="#" class="social-link" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="Dribbble">
+                <i class="fab fa-dribbble"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="Behance">
+                <i class="fab fa-behance"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+        <p>&copy; 2024 林晚. 保留所有权利. | 用 ❤️ 设计</p>
+    </footer>
+
+    <script>
+        // 页面加载完成后隐藏加载动画
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                document.getElementById('loader').classList.add('hidden');
+            }, 1000);
+        });
+
+        // 鼠标跟随光晕效果
+        document.addEventListener('mousemove', function(e) {
+            const cursorGlow = document.getElementById('cursor-glow');
+            cursorGlow.style.left = e.clientX + 'px';
+            cursorGlow.style.top = e.clientY + 'px';
+        });
+
+        // 生成粒子背景
+        function createParticles() {
+            const particlesContainer = document.getElementById('particles');
+            const particleCount = 50;
+
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * 20 + 's';
+                particle.style.animationDuration = (Math.random() * 20 + 10) + 's';
+                particlesContainer.appendChild(particle);
+            }
+        }
+
+        // 平滑滚动
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // 滚动时的导航栏效果
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.glass-header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(26, 31, 58, 0.95)';
+            } else {
+                header.style.background = 'var(--gradient-glass)';
+            }
+        });
+
+        // 表单提交处理
+        document.querySelector('.contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            // 创建成功消息
+            const successMessage = document.createElement('div');
+            successMessage.style.cssText = `
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background: linear-gradient(135deg, #2d4a2b 0%, #1a1f3a 100%);
+                color: white;
+                padding: 2rem 3rem;
+                border-radius: 20px;
+                box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+                z-index: 10000;
+                text-align: center;
+                backdrop-filter: blur(10px);
+                border: 1px solid rgba(255,255,255,0.1);
+            `;
+            successMessage.innerHTML = `
+                <h3 style="margin-bottom: 1rem; color: #fbbf24;">✉️ 消息已发送！</h3>
+                <p>感谢您的联系，我会尽快回复您。</p>
+            `;
+
+            document.body.appendChild(successMessage);
+
+            // 重置表单
+            this.reset();
+
+            // 3秒后移除成功消息
+            setTimeout(function() {
+                successMessage.remove();
+            }, 3000);
+        });
+
+        // 项目卡片点击效果
+        document.querySelectorAll('.project-card').forEach(card => {
+            card.addEventListener('click', function() {
+                // 创建展开效果
+                this.style.transform = 'scale(1.05)';
+                setTimeout(() => {
+                    this.style.transform = '';
+                }, 300);
+            });
+        });
+
+        // 初始化粒子效果
+        createParticles();
+
+        // 添加滚动动画
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animation = 'fadeInUp 0.6s ease-out both';
+                }
+            });
+        }, observerOptions);
+
+        // 观察所有需要动画的元素
+        document.querySelectorAll('.project-card, .skill-item').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
