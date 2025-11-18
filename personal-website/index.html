@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人主页 - 数字创作者</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h3>My Space</h3>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">首页</a></li>
+                <li><a href="#about">关于</a></li>
+                <li><a href="#services">服务</a></li>
+                <li><a href="#portfolio">作品</a></li>
+                <li><a href="#contact">联系</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主页部分 -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    你好，我是 <span class="highlight">数字创作者</span>
+                </h1>
+                <p class="hero-subtitle">
+                    专注于自媒体内容创作、数字营销和技术创新
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">联系我</a>
+                    <a href="#portfolio" class="btn btn-secondary">查看作品</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="avatar-placeholder">
+                    <i class="fas fa-user-circle"></i>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- 关于我 -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">关于我</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        我是一名充满激情的数字创作者，专注于通过创新的内容和策略帮助品牌和个人在数字世界中脱颖而出。
+                    </p>
+                    <p>
+                        凭借多年的自媒体运营经验和技术背景，我能够为客户提供从内容策划到技术实现的全方位解决方案。
+                    </p>
+                    <div class="skills">
+                        <h3>核心技能</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">内容创作</span>
+                            <span class="skill-tag">视频制作</span>
+                            <span class="skill-tag">社交媒体</span>
+                            <span class="skill-tag">数据分析</span>
+                            <span class="skill-tag">SEO优化</span>
+                            <span class="skill-tag">品牌策划</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <h3>500+</h3>
+                        <p>原创内容</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>50K+</h3>
+                        <p>粉丝关注</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>3年+</h3>
+                        <p>行业经验</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 服务项目 -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">服务项目</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>视频内容创作</h3>
+                    <p>从创意构思到后期制作，提供专业的视频内容创作服务</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>社交媒体运营</h3>
+                    <p>全平台社交媒体策略制定和日常运营管理</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <h3>品牌推广</h3>
+                    <p>个性化的品牌推广方案，提升品牌知名度和影响力</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>技术解决方案</h3>
+                    <p>为创作者提供自动化工具和技术支持服务</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 作品展示 -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">精选作品</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <i class="fas fa-play-circle"></i>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>科技产品评测系列</h3>
+                        <p>深度评测最新科技产品，帮助用户做出明智选择</p>
+                        <a href="#" class="portfolio-link">查看详情 →</a>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>生活方式记录</h3>
+                        <p>记录美好生活瞬间，分享实用的生活技巧</p>
+                        <a href="#" class="portfolio-link">查看详情 →</a>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>创意教学视频</h3>
+                        <p>简单易懂的教学内容，让学习变得更加有趣</p>
+                        <a href="#" class="portfolio-link">查看详情 →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系方式 -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">联系我</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>让我们一起创造精彩</h3>
+                    <p>如果您有任何合作意向或问题，欢迎随时联系我</p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <span>contact@example.com</span>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-phone"></i>
+                            <span>+86 123 4567 8900</span>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>中国</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-weixin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-weibo"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-bilibili"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="您的姓名" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="您的邮箱" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" placeholder="留言内容" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">发送消息</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 个人主页. 保留所有权利.</p>
+                <p>用 <i class="fas fa-heart"></i> 精心制作</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

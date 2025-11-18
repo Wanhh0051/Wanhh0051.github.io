@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网站部署指南 - 一键上线</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            color: #1e3a8a;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            color: #666;
+        }
+
+        .step {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-left: 5px solid #3b82f6;
+        }
+
+        .step h2 {
+            color: #1e3a8a;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+
+        .step-content {
+            margin-left: 20px;
+        }
+
+        .step-content li {
+            margin-bottom: 15px;
+            list-style: none;
+            position: relative;
+            padding-left: 30px;
+        }
+
+        .step-content li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #10b981;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .button {
+            display: inline-block;
+            background: linear-gradient(135deg, #3b82f6, #1e3a8a);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            margin: 10px;
+        }
+
+        .button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(59, 130, 246, 0.3);
+        }
+
+        .code-block {
+            background: #1f2937;
+            color: #f9fafb;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            font-family: 'Courier New', monospace;
+            overflow-x: auto;
+        }
+
+        .note {
+            background: #fef3c7;
+            border: 1px solid #f59e0b;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+
+        .note strong {
+            color: #92400e;
+        }
+
+        .demo-box {
+            background: #ecfdf5;
+            border: 2px dashed #10b981;
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .demo-box h3 {
+            color: #047857;
+            margin-bottom: 15px;
+        }
+
+        .file-list {
+            background: #f3f4f6;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .file-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+            padding: 10px;
+            background: white;
+            border-radius: 8px;
+        }
+
+        .file-icon {
+            color: #3b82f6;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚀 网站部署指南</h1>
+            <p>5分钟让你的公司网站上线</p>
+        </div>
+
+        <div class="step">
+            <h2>📋 准备工作</h2>
+            <div class="step-content">
+                <div class="file-list">
+                    <div class="file-item">
+                        <span class="file-icon">📄</span>
+                        <span>index.html - 主页面</span>
+                    </div>
+                    <div class="file-item">
+                        <span class="file-icon">🎨</span>
+                        <span>styles.css - 样式文件</span>
+                    </div>
+                    <div class="file-item">
+                        <span class="file-icon">⚡</span>
+                        <span>script.js - 交互功能</span>
+                    </div>
+                    <div class="file-item">
+                        <span class="file-icon">📖</span>
+                        <span>README.md - 说明文档</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="step">
+            <h2>🌐 Netlify 部署 (推荐)</h2>
+            <div class="step-content">
+                <ol>
+                    <li>访问 <a href="https://netlify.com" target="_blank" class="button">Netlify 官网</a></li>
+                    <li>使用 GitHub、GitLab 或邮箱注册账号</li>
+                    <li>将整个网站文件夹压缩为 ZIP 文件</li>
+                    <li>在 Netlify 控制台拖拽 ZIP 文件到部署区域</li>
+                    <li>等待部署完成 (通常 1-2 分钟)</li>
+                    <li>获得免费域名：https://random-name.netlify.app</li>
+                </ol>
+
+                <div class="demo-box">
+                    <h3>🎯 一键部署</h3>
+                    <p>直接拖拽文件夹到下面的区域即可部署</p>
+                    <div style="border: 3px dashed #3b82f6; padding: 40px; margin: 20px 0; border-radius: 10px;">
+                        <p style="font-size: 1.2rem; color: #3b82f6;">📁 拖拽网站文件夹到这里</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="step">
+            <h2>🏷️ 自定义域名设置</h2>
+            <div class="step-content">
+                <ol>
+                    <li>在 Netlify 控制台进入 "Site settings"</li>
+                    <li>点击 "Domain management" → "Add custom domain"</li>
+                    <li>输入你的域名：www.companywebsite.com</li>
+                    <li>在域名注册商添加 DNS 记录：</li>
+                </ol>
+
+                <div class="code-block">
+类型：CNAME
+名称：www
+值：your-site-name.netlify.app
+                </div>
+
+                <div class="note">
+                    <strong>注意：</strong>DNS 生效需要 10-30 分钟，请耐心等待
+                </div>
+            </div>
+        </div>
+
+        <div class="step">
+            <h2>🛠️ 其他部署选项</h2>
+            <div class="step-content">
+                <p><strong>GitHub Pages (免费)</strong></p>
+                <ul>
+                    <li>创建 GitHub 仓库：username.github.io</li>
+                    <li>上传网站文件</li>
+                    <li>访问：https://username.github.io</li>
+                </ul>
+
+                <p><strong>Vercel (免费)</strong></p>
+                <ul>
+                    <li>访问 <a href="https://vercel.com" target="_blank" class="button">Vercel</a></li>
+                    <li>连接 GitHub 或上传文件</li>
+                    <li>自动部署和 HTTPS</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="step">
+            <h2>✅ 部署后检查清单</h2>
+            <div class="step-content">
+                <ul>
+                    <li>网站能正常访问</li>
+                    <li>所有页面链接正常</li>
+                    <li>表单提交功能正常</li>
+                    <li>移动端显示正常</li>
+                    <li>加载速度满意</li>
+                    <li>SSL 证书正常 (HTTPS)</li>
+                </ul>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 40px;">
+            <h2 style="color: #1e3a8a; margin-bottom: 20px;">🎉 恭喜！你的公司网站已上线</h2>
+            <p style="font-size: 1.2rem; color: #666; margin-bottom: 30px;">
+                现在可以通过 www.companywebsite.com 访问你的网站
+            </p>
+            <a href="index.html" class="button">查看网站</a>
+            <a href="deploy-guide.md" class="button">详细文档</a>
+        </div>
+    </div>
+
+    <script>
+        // 添加一些交互效果
+        document.addEventListener('DOMContentLoaded', function() {
+            // 模拟拖拽区域高亮
+            const dropZone = document.querySelector('.demo-box div[style*="border: 3px dashed"]');
+
+            if (dropZone) {
+                dropZone.addEventListener('dragover', function(e) {
+                    e.preventDefault();
+                    this.style.background = '#eff6ff';
+                    this.style.borderColor = '#1e40af';
+                });
+
+                dropZone.addEventListener('dragleave', function(e) {
+                    e.preventDefault();
+                    this.style.background = 'transparent';
+                    this.style.borderColor = '#3b82f6';
+                });
+            }
+
+            // 添加平滑滚动
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
