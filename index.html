@@ -3,13 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>林晚 - 前端开发学习者</title>
+    <title>林晚 - 前端开发者 | 网站定制服务</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">林晚</div>
+            <div class="logo">
+                <span class="logo-icon">👩‍💻</span>
+                <span class="logo-text">林晚</span>
+            </div>
             <ul class="nav-links">
                 <li><a href="#home">首页</a></li>
                 <li><a href="#about">关于</a></li>
@@ -17,37 +23,132 @@
                 <li><a href="#portfolio">作品</a></li>
                 <li><a href="#contact">联系</a></li>
             </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
     </header>
 
     <main>
         <section id="home" class="hero">
+            <div class="hero-bg">
+                <div class="floating-shapes">
+                    <div class="shape shape-1"></div>
+                    <div class="shape shape-2"></div>
+                    <div class="shape shape-3"></div>
+                </div>
+            </div>
             <div class="hero-content">
-                <h1>你好，我是林晚</h1>
-                <h2>前端开发学习者 | 武汉</h2>
-                <p>专注于学习Web开发技术，为客户提供优质的网站开发服务</p>
-                <button class="cta-button"><a href="#contact">联系合作</a></button>
+                <div class="hero-badge">
+                    <span class="badge-icon">🌟</span>
+                    <span>专注前端开发 | 武汉本地服务</span>
+                </div>
+                <h1>你好，我是<span class="highlight">林晚</span></h1>
+                <h2 class="hero-subtitle">前端开发者 | 网站定制专家</h2>
+                <p class="hero-description">专注于打造个性化、高性能的网站解决方案</p>
+                <div class="hero-actions">
+                    <button class="cta-button primary">
+                        <span>🚀</span>
+                        <a href="#contact">立即咨询</a>
+                    </button>
+                    <button class="cta-button secondary">
+                        <span>📂</span>
+                        <a href="#portfolio">查看作品</a>
+                    </button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">3+</div>
+                        <div class="stat-label">完成项目</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">客户满意度</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">技术支持</div>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section id="about" class="about">
             <div class="container">
-                <h2>关于我</h2>
+                <div class="section-header">
+                    <span class="section-subtitle">👋 认识一下</span>
+                    <h2 class="section-title">关于我</h2>
+                    <p class="section-description">用心打造每一个数字产品</p>
+                </div>
                 <div class="about-content">
-                    <div class="about-text">
-                        <p>我是林晚，一名位于武汉的前端开发学习者。目前正在深入学习HTML、CSS、JavaScript和React等前端技术。</p>
-                        <p>虽然我还在学习阶段，但我有强烈的学习欲望和认真负责的工作态度。我会用最专业的态度为您的项目服务，确保交付高质量的网站。</p>
-                        <p>我相信通过不断学习和实践，能够为每个客户提供满意的解决方案。</p>
+                    <div class="about-card">
+                        <div class="about-avatar">
+                            <div class="avatar-placeholder">
+                                <span class="avatar-emoji">👩‍💻</span>
+                                <span class="avatar-text">林晚</span>
+                            </div>
+                        </div>
+                        <div class="about-info">
+                            <h3>前端开发工程师</h3>
+                            <p class="about-location">📍 武汉</p>
+                            <p class="about-bio">我是一名充满激情的前端开发者，专注于创建美观、高性能的网站应用。我相信好的代码不仅要能工作，更要优雅易维护。</p>
+                        </div>
                     </div>
-                    <div class="skills">
-                        <h3>技能标签</h3>
-                        <div class="skill-tags">
-                            <span class="tag learning">HTML/CSS</span>
-                            <span class="tag learning">JavaScript</span>
-                            <span class="tag learning">React</span>
-                            <span class="tag soft">学习能力</span>
-                            <span class="tag soft">认真负责</span>
-                            <span class="tag soft">沟通能力</span>
+
+                    <div class="skills-section">
+                        <h3 class="skills-title">🛠️ 技术栈</h3>
+                        <div class="skills-grid">
+                            <div class="skill-card">
+                                <div class="skill-icon">🎨</div>
+                                <div class="skill-content">
+                                    <h4>前端设计</h4>
+                                    <p>HTML5, CSS3, JavaScript, React</p>
+                                </div>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon">📱</div>
+                                <div class="skill-content">
+                                    <h4>响应式设计</h4>
+                                    <p>移动端优先，完美适配各种设备</p>
+                                </div>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon">⚡</div>
+                                <div class="skill-content">
+                                    <h4>性能优化</h4>
+                                    <p>快速加载，流畅体验</p>
+                                </div>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon">🔧</div>
+                                <div class="skill-content">
+                                    <h4>开发工具</h4>
+                                    <p>Git, VS Code, Chrome DevTools</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="philosophy-section">
+                        <h3 class="philosophy-title">💡 开发理念</h3>
+                        <div class="philosophy-grid">
+                            <div class="philosophy-item">
+                                <span class="philosophy-icon">✨</span>
+                                <h4>用户体验优先</h4>
+                                <p>始终站在用户角度思考问题</p>
+                            </div>
+                            <div class="philosophy-item">
+                                <span class="philosophy-icon">🎯</span>
+                                <h4>代码质量</h4>
+                                <p>编写整洁、可维护的代码</p>
+                            </div>
+                            <div class="philosophy-item">
+                                <span class="philosophy-icon">🚀</span>
+                                <h4>持续学习</h4>
+                                <p>跟进行业最新技术和趋势</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -56,27 +157,126 @@
 
         <section id="services" class="services">
             <div class="container">
-                <h2>服务项目</h2>
+                <div class="section-header">
+                    <span class="section-subtitle">💼 我能提供什么</span>
+                    <h2 class="section-title">专业服务</h2>
+                    <p class="section-description">高性价比的网站开发解决方案</p>
+                </div>
                 <div class="services-grid">
-                    <div class="service-card">
-                        <h3>个人网站</h3>
-                        <p>个人简历网站、博客网站、作品展示网站</p>
-                        <div class="price">¥500-1000</div>
+                    <div class="service-card premium">
+                        <div class="service-header">
+                            <div class="service-icon">👤</div>
+                            <h3>个人品牌网站</h3>
+                            <span class="service-badge">热门</span>
+                        </div>
+                        <div class="service-content">
+                            <p>个人简历网站、博客平台、作品集展示</p>
+                            <ul class="service-features">
+                                <li><span>✓</span>响应式设计</li>
+                                <li><span>✓</span>SEO优化</li>
+                                <li><span>✓</span>快速交付</li>
+                            </ul>
+                            <div class="service-price">
+                                <span class="price-label">起步价</span>
+                                <span class="price-amount">¥800</span>
+                                <span class="price-range">¥500-1000</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="service-card">
-                        <h3>企业官网</h3>
-                        <p>公司介绍网站、产品展示网站、营销落地页</p>
-                        <div class="price">¥1500-3000</div>
+
+                    <div class="service-card featured">
+                        <div class="service-header">
+                            <div class="service-icon">🏢</div>
+                            <h3>企业官网</h3>
+                            <span class="service-badge">推荐</span>
+                        </div>
+                        <div class="service-content">
+                            <p>公司介绍、产品展示、营销落地页</p>
+                            <ul class="service-features">
+                                <li><span>✓</span>专业设计</li>
+                                <li><span>✓</span>后台管理</li>
+                                <li><span>✓</span>技术支持</li>
+                            </ul>
+                            <div class="service-price">
+                                <span class="price-label">起步价</span>
+                                <span class="price-amount">¥2000</span>
+                                <span class="price-range">¥1500-3000</span>
+                            </div>
+                        </div>
                     </div>
+
                     <div class="service-card">
-                        <h3>H5页面</h3>
-                        <p>移动端网页、微信小程序页面、活动页面</p>
-                        <div class="price">¥800-2000</div>
+                        <div class="service-header">
+                            <div class="service-icon">📱</div>
+                            <h3>H5移动页面</h3>
+                        </div>
+                        <div class="service-content">
+                            <p>移动端网页、微信小程序页面、活动页面</p>
+                            <ul class="service-features">
+                                <li><span>✓</span>移动优化</li>
+                                <li><span>✓</span>交互动画</li>
+                                <li><span>✓</span>社交分享</li>
+                            </ul>
+                            <div class="service-price">
+                                <span class="price-label">起步价</span>
+                                <span class="price-amount">¥1200</span>
+                                <span class="price-range">¥800-2000</span>
+                            </div>
+                        </div>
                     </div>
+
                     <div class="service-card">
-                        <h3>网站维护</h3>
-                        <p>网站更新、bug修复、功能添加</p>
-                        <div class="price">¥100-300/次</div>
+                        <div class="service-header">
+                            <div class="service-icon">🔧</div>
+                            <h3>网站维护服务</h3>
+                        </div>
+                        <div class="service-content">
+                            <p>网站更新、Bug修复、功能添加</p>
+                            <ul class="service-features">
+                                <li><span>✓</span>快速响应</li>
+                                <li><span>✓</span>专业调试</li>
+                                <li><span>✓</span>持续优化</li>
+                            </ul>
+                            <div class="service-price">
+                                <span class="price-label">服务费</span>
+                                <span class="price-amount">¥200</span>
+                                <span class="price-range">¥100-300/次</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-process">
+                    <h3 class="process-title">🎯 服务流程</h3>
+                    <div class="process-steps">
+                        <div class="process-step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>需求沟通</h4>
+                                <p>详细了解您的需求和目标</p>
+                            </div>
+                        </div>
+                        <div class="process-step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>方案设计</h4>
+                                <p>制定个性化解决方案</p>
+                            </div>
+                        </div>
+                        <div class="process-step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>开发实施</h4>
+                                <p>高质量代码开发实现</p>
+                            </div>
+                        </div>
+                        <div class="process-step">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h4>交付上线</h4>
+                                <p>测试验收，协助部署上线</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -84,20 +284,92 @@
 
         <section id="portfolio" class="portfolio">
             <div class="container">
-                <h2>作品展示</h2>
+                <div class="section-header">
+                    <span class="section-subtitle">🎨 精选案例</span>
+                    <h2 class="section-title">作品展示</h2>
+                    <p class="section-description">每一个项目都是用心的杰作</p>
+                </div>
                 <div class="portfolio-grid">
-                    <div class="portfolio-item coming-soon">
-                        <div class="overlay">
-                            <h3>个人作品网站</h3>
-                            <p>这个网站就是我的第一个作品！</p>
-                            <span class="status">进行中</span>
+                    <div class="portfolio-item featured-project">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <span class="project-icon">🌟</span>
+                                <span class="project-text">个人作品网站</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <span class="project-type">个人网站</span>
+                                <span class="project-status live">在线</span>
+                            </div>
+                            <h3>个人品牌展示网站</h3>
+                            <p>这个网站就是我的第一个作品！采用现代化设计，完美展示个人信息和服务项目。</p>
+                            <div class="project-tags">
+                                <span class="tag">HTML5</span>
+                                <span class="tag">CSS3</span>
+                                <span class="tag">响应式</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://wanhh0051.github.io" target="_blank" class="project-link">
+                                    <span>👁️</span>
+                                    查看网站
+                                </a>
+                            </div>
                         </div>
                     </div>
+
                     <div class="portfolio-item coming-soon">
-                        <div class="overlay">
-                            <h3>更多作品</h3>
-                            <p>正在学习中，即将展示更多项目</p>
-                            <span class="status">即将开始</span>
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <span class="project-icon">🚧</span>
+                                <span class="project-text">项目开发中</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <span class="project-type">企业官网</span>
+                                <span class="project-status in-progress">开发中</span>
+                            </div>
+                            <h3>科技公司官网</h3>
+                            <p>正在开发中的企业官网项目，包含产品展示、新闻动态、联系方式等模块。</p>
+                            <div class="project-tags">
+                                <span class="tag">React</span>
+                                <span class="tag">现代设计</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="#contact" class="project-link">
+                                    <span>💬</span>
+                                    咨询详情
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item coming-soon">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <span class="project-icon">📱</span>
+                                <span class="project-text">移动项目</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <span class="project-type">H5页面</span>
+                                <span class="project-status planning">规划中</span>
+                            </div>
+                            <h3>活动宣传页面</h3>
+                            <p>专为移动端设计的活动宣传页面，包含丰富的交互动画和分享功能。</p>
+                            <div class="project-tags">
+                                <span class="tag">H5</span>
+                                <span class="tag">动画</span>
+                                <span class="tag">移动端</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="#contact" class="project-link">
+                                    <span>🤝</span>
+                                    合作机会
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -106,26 +378,91 @@
 
         <section id="contact" class="contact">
             <div class="container">
-                <h2>联系我</h2>
+                <div class="section-header">
+                    <span class="section-subtitle">📞 联系我</span>
+                    <h2 class="section-title">开启合作</h2>
+                    <p class="section-description">让我们一起创造出色的数字产品</p>
+                </div>
                 <div class="contact-content">
-                    <div class="contact-info">
-                        <h3>项目合作请加微信</h3>
-                        <div class="wechat-qr">
-                            <div class="qr-placeholder">
-                                <p>📱 请添加微信：ww84973</p>
-                                <p>（备注：网站开发）</p>
+                    <div class="contact-main">
+                        <div class="contact-card primary">
+                            <div class="contact-header">
+                                <div class="contact-icon">💬</div>
+                                <h3>微信咨询</h3>
+                                <p>最快响应，直接沟通</p>
+                            </div>
+                            <div class="contact-body">
+                                <div class="wechat-info">
+                                    <div class="wechat-qr">
+                                        <div class="qr-placeholder">
+                                            <span class="qr-emoji">📱</span>
+                                            <div class="qr-text">
+                                                <p class="wechat-id"><strong>ww84973</strong></p>
+                                                <p class="wechat-note">扫码或搜索添加</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wechat-steps">
+                                        <h4>添加好友时请备注：</h4>
+                                        <ul>
+                                            <li><span class="step-num">1</span> 项目类型（个人网站/企业官网/H5页面）</li>
+                                            <li><span class="step-num">2</span> 主要需求和功能要求</li>
+                                            <li><span class="step-num">3</span> 预算范围和时间预期</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="contact-features">
+                                    <div class="feature-item">
+                                        <span class="feature-icon">⚡</span>
+                                        <span>响应时间 < 2小时</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">🎯</span>
+                                        <span>专业需求分析</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="feature-icon">💡</span>
+                                        <span>免费方案建议</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <p class="contact-note">如果您需要网站开发服务，请添加我的微信详细沟通需求。我会认真听取您的需求，提供最适合的解决方案。</p>
-                    </div>
-                    <div class="contact-form">
-                        <h3>快速咨询</h3>
-                        <p>添加微信时请说明：</p>
-                        <ul>
-                            <li>项目类型和需求</li>
-                            <li>预算范围</li>
-                            <li>期望完成时间</li>
-                        </ul>
+
+                        <div class="contact-secondary">
+                            <div class="contact-card">
+                                <div class="contact-header small">
+                                    <div class="contact-icon">📍</div>
+                                    <h4>服务地区</h4>
+                                </div>
+                                <div class="contact-body">
+                                    <p>🌏 全国服务（远程开发）</p>
+                                    <p>🏙️ 武汉本地（可面议）</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-card">
+                                <div class="contact-header small">
+                                    <div class="contact-icon">⏰</div>
+                                    <h4>工作时间</h4>
+                                </div>
+                                <div class="contact-body">
+                                    <p>周一至周日 9:00-22:00</p>
+                                    <p>紧急项目可加急处理</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-card">
+                                <div class="contact-header small">
+                                    <div class="contact-icon">🛡️</div>
+                                    <h4>服务保障</h4>
+                                </div>
+                                <div class="contact-body">
+                                    <p>✅ 源码交付</p>
+                                    <p>✅ 免费Bug修复</p>
+                                    <p>✅ 技术支持</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -134,9 +471,87 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 林晚. 专注于前端开发学习与实践</p>
-            <p>地点：武汉 | 微信：ww84973</p>
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-icon">👩‍💻</span>
+                        <span class="logo-text">林晚</span>
+                    </div>
+                    <p class="footer-description">专业前端开发者，用心打造每一个数字产品</p>
+                    <div class="footer-contact">
+                        <p><span class="contact-icon">📱</span> 微信：ww84973</p>
+                        <p><span class="contact-icon">📍</span> 地点：武汉</p>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>服务项目</h4>
+                        <ul>
+                            <li><a href="#services">个人网站</a></li>
+                            <li><a href="#services">企业官网</a></li>
+                            <li><a href="#services">H5页面</a></li>
+                            <li><a href="#services">网站维护</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section">
+                        <h4>快速链接</h4>
+                        <ul>
+                            <li><a href="#about">关于我</a></li>
+                            <li><a href="#portfolio">作品展示</a></li>
+                            <li><a href="#contact">联系方式</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section">
+                        <h4>联系方式</h4>
+                        <ul>
+                            <li><span class="link-icon">💬</span> 微信咨询</li>
+                            <li><span class="link-icon">⏰</span> 9:00-22:00</li>
+                            <li><span class="link-icon">🚀</span> 快速响应</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2024 林晚. All rights reserved.</p>
+                </div>
+                <div class="footer-badge">
+                    <span>🌟</span>
+                    <span>用心服务每一位客户</span>
+                </div>
+            </div>
         </div>
     </footer>
+
+    <script>
+        // 移动端菜单切换
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburger = document.querySelector('.hamburger');
+            const navLinks = document.querySelector('.nav-links');
+
+            hamburger.addEventListener('click', function() {
+                navLinks.classList.toggle('active');
+                hamburger.classList.toggle('active');
+            });
+
+            // 平滑滚动
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
